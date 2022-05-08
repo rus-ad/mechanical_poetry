@@ -1,0 +1,8 @@
+'service':
+   'name': 'Mechanical Poetry'
+   'version': '0.1.0'
+   'port': 8112
+   'host': 'localhost'
+   'user': 'postgres'
+   'password': 'mysecretpassword'
+   'database': 'vk_data'
