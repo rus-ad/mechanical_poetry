@@ -1,3 +1,7 @@
+.test {
+    display:inline-block;
+}
+
 input[type=search] {
   display: block;
   width: 100%;

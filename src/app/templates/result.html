@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=ru>
+<html lang=ru xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset=utf-8>
     <meta name=viewport content="width=device-width,initial-scale=1">
@@ -13,16 +13,62 @@
     <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
     <script src=/referral-partners/src/app/templates/static/smart-app-banner.js></script>
     <link rel="stylesheet" type="text/css" href="{{ static('css/app.10c9cba5f2e2f1dc959b0a7520f19d0b.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ static('css/result_img.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ static('css/button.css') }}">
+
 
 </head>
 <body>
 
 <div data-v-06b49fcb="" class="main">
-<form enctype="multipart/form-data" method="post">
-    <div align="center">
-    </div>
-</form>
+        <form enctype="multipart/form-data" method="post" action="/finish">
+            <div class="test">
+                <textarea rows={{num_rows}} cols="60" id="poetry" name="poetry" readonly="readonly">
+                    {{text}}
+                </textarea>
+            </div>
+            <br></br>
+            <div class="test">
+            Тематика стихотворения соответствует ожидаемой:
+                <select class="select-estimator" name="theme">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                 </select>
+                <br></br>
+                Тип/размер стихотворения соответствует выбраному:
+                <select class="select-estimator" name="size">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                 </select>
+                <br></br>
+                Стилистиха стихотворения сохранена:
+                <select class="select-estimator" name="style">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                 </select>
+                <br></br>
+                Вам понравилось стихотворение:
+                <select class="select-estimator" name="interest">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                 </select>
+                <br></br>
+                <div class="fl_upld">
+                    <label><input id="fl_inp2" type="submit">Отправить оценку</label>
+                </div>
+            </div>
+        </form>
 </div>
 
 
