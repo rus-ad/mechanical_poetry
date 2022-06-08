@@ -5,9 +5,9 @@ description = ""
 authors = ["Rusnak Aleksander <rus91ad@mail.ru>"]
 
 [tool.poetry.dependencies]
-python = "3.8.5"
+python = "3.7.0"
 trafaret = "^2.1.1"
-Jinja2 = "^3.1.2"
+Jinja2 = "3.0.3"
 aiohttp-jinja2 = "^1.5"
 trafaret-config = "^2.0.2"
 
